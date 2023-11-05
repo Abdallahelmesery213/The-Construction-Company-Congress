@@ -25,26 +25,31 @@ ul{
 /* start header */
 header{
     position: relative;
-    /* margin-bottom: 35px; */
-    padding-bottom: 35px;
+    margin-bottom: 20px;
+    /* padding-bottom: 35px; */
     /* border-bottom: 5px solid #09539f; */
 }
+header .left-part img{
+    width: 100%;
+    min-height: 105px;
+    cursor: pointer;
+}
 header .nav1{
-    margin-top: 25px;
-    margin-bottom: 25px;
     background-color: #09539f;
-    padding: 25px 0;
+    padding: 0 20px;
     display: flex;
     justify-content: center;
+    align-items: center;
     position: absolute;
     width: 74%;
+    min-height: 105px;
 }
 
 /* header .nav1 ul li:first-of-type{
     border-top: 4px solid #09539f;
 } */
 header .nav1 ul li{
-    font-size: 14px;
+    font-size: 17px;
     margin-right: 25px;
     cursor: pointer;
     padding-top: 5px;
@@ -146,6 +151,7 @@ header .nav2 ul li{
 }
 .datamatix-section p{
     font-size: 21px;
+    line-height: 32px;
 }
 .datamatix-section a{
     color: #09539f !important;
@@ -175,7 +181,6 @@ header .nav2 ul li{
     width: 100%;
 }
 .banner{
-    border-bottom: 10px solid #09539f;
     width: 100%;
     height: 580px;
     background-size: cover;
@@ -185,20 +190,25 @@ header .nav2 ul li{
 .banner-1{
     background-image: url(./../img/construction_img_3.jpg);
     margin-bottom: 30px;
+    border-bottom: 10px solid #09539f;
 }
 .banner-2{
     background-image: url(./../img/construction_img_4.jpg);
+    border-bottom: 10px solid #09539f;
     /* margin-bottom: -5px; */
 }
 .banner-3{
     background-image: url(./../img/construction_img_5.jpg);
+    border-bottom: 10px solid #09539f;
 }
 .banner-4{
     background-image: url(./../img/construction_img_6.jpg);
+    border-bottom: 10px solid #09539f;
     /* margin-bottom: -5px; */
 }
 .banner-5{
     background-image: url(./../img/construction_img_7.jpg);
+    border-bottom: 10px solid #09539f;
     /* margin-bottom: -5px; */
 }
 /* .banner-6{
@@ -349,8 +359,19 @@ footer form .btn{
         padding-bottom: 10px;
     } */
 }
+@media only screen and (max-width: 1199px) {
+    .banner .banner-text h3{
+        font-size: 38px;
+    }
+}
 @media only screen and (max-width: 1109px) {
     .counter-top .btns {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 1086px) {
+    header .nav1{
+        position: relative;
         width: 100%;
     }
 }
@@ -565,6 +586,10 @@ footer form .btn{
         margin-left: 5px;
         font-size: 13px;
     }
+    header .left-part img{
+        width: auto;
+        height: auto;
+    }
 }
 @media only screen and (max-width: 505px) {
     header .nav1 .langs {
@@ -591,6 +616,9 @@ footer form .btn{
     .banner .banner-text h3 {
         margin-top: 40%;
     }
+    .datamatix-section p {
+        line-height: 22px;
+    }
     
 }
 @media only screen and (max-width: 375px) {
@@ -610,8 +638,15 @@ footer form .btn{
         padding: 5px 10px;
     }
     .datamatix-section h3 {
-        font-size: 20px;
-        margin-bottom: 12px;
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+    .datamatix-section p , .datamatix-section a {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .datamatix-section{
+        margin-bottom: 25px;
     }
 }
 
